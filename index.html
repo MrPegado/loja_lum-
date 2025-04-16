@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt.br">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUMÉ</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUMÉ</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-    <img src="img/grade-horizontal.jpeg" class="grade-horizontal">
-    <img src="img/circulo.png" class="circulo">
+  <div class="container">
+    <div class="background">
+      <img class="ripas item" src="img/grade-horizontal.jpeg" alt="Grade Vertical" />
+      <div class="circulo item">
+        <img src="img/circulo.png" alt="Imagem Círculo" />
+      </div>
+      <img class="bancada item" src="img/bancada.png" alt="Bancada de madeira" />
+      <img class="jarro item" src="img/jarro.png" alt="Jarro decorativo" />
+    </div>
+  </div>
+
+  <script>
+    const itens = document.querySelectorAll(".item");
+    itens.forEach((item, index) => {
+      const delay = item.classList.contains("circulo") || item.classList.contains("bancada") || item.classList.contains("jarro") ? 1000 : index * 500;
+      setTimeout(() => {
+        item.classList.add("show");
+      }, delay);
+    });
+  </script>
 </body>
 </html>

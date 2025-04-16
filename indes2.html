@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animação de Imagens Empilhadas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      position: relative;
+    }
+    .container {
+      position: relative;
+      
+      width: 200px;
+      height: 300px;
+    }
+    .item {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .item.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="itemContainer">
+    <img class="item" src="img/grade-horizontal.jpeg" alt="Imagem 1">
+    <img class="item" src="img/circulo.png" alt="Imagem 2">
+    <img class="item" src="https://via.placeholder.com/200x100?text=Imagem+3" alt="Imagem 3">
+    <img class="item" src="https://via.placeholder.com/200x100?text=Imagem+4" alt="Imagem 4">
+    <img class="item" src="https://via.placeholder.com/200x100?text=Imagem+5" alt="Imagem 5">
+  </div>
+
+  <script>
+    const items = document.querySelectorAll(".item");
+    items.forEach((item, index) => {
+      setTimeout(() => {
+        item.classList.add("show");
+      }, index * 500);
+    });
+  </script>
+</body>
+</html>
