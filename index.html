@@ -9,23 +9,77 @@
 <body>
   <div class="container">
     <div class="background">
-      <img class="ripas item" src="img/grade-horizontal.jpeg" alt="Grade Vertical" />
+      <img class="ripas item" src="img/grade-horizontal.jpeg" alt="Grade Vertical" loading="lazy" />
       <div class="circulo item">
-        <img src="img/circulo.png" alt="Imagem Círculo" />
+        <img src="img/circulo.png" alt="Imagem Círculo" loading="lazy" />
       </div>
-      <img class="bancada item" src="img/bancada.png" alt="Bancada de madeira" />
-      <img class="jarro item" src="img/jarro.png" alt="Jarro decorativo" />
+      <img class="bancada item" src="img/bancada.png" alt="Bancada de madeira" loading="lazy" />
+      <img class="jarro item" src="img/jarro.png" alt="Jarro decorativo" loading="lazy" />
+      <img class="livros item" src="img/decoração.png" alt="Livros decorativos" loading="lazy">
+      <img class="lustre item" src="img/lustre.png" alt="lustres" loading="lazy">
+      <img class="lustre2 item" src="img/lustre.png" alt="lustres" loading="lazy">
+
     </div>
   </div>
+  <div class="textos item">
+    <h1>Lumé<br><h2>-Home-</h2></h1>
+    <p>Elegância para <br>cada detalhe.</p>
+    <button>Compre já</button>
+  </div>
+  <header class="cabecalho">
 
+    <nav class="menu">
+      <a href="#">Móveis</a>
+      <a href="#">Decoração</a>
+      <a href="#">Iluminação</a>
+      <a href="#">Mais vendidos</a>
+    </nav>
+  
+    <div id="Busca">
+      <input type="text" id="txtBusca" placeholder="Buscar..."/>
+      <img class="lupa" src="img/lupa.png" id="btnBusca" alt="Buscar"/>
+    </div>
+
+    <div class="icones">
+      <img src="img/carrinho.png" alt="Carrinho" class="icone" />
+    </div>
+  </header>
+  
   <script>
     const itens = document.querySelectorAll(".item");
     itens.forEach((item, index) => {
-      const delay = item.classList.contains("circulo") || item.classList.contains("bancada") || item.classList.contains("jarro") ? 1000 : index * 500;
-      setTimeout(() => {
-        item.classList.add("show");
-      }, delay);
+      const delay = (item.classList.contains("circulo") || item.classList.contains("bancada") || item.classList.contains("jarro"))
+        ? 1000
+        : index * 500;
+      setTimeout(() => item.classList.add("show"), delay);
     });
   </script>
 </body>
 </html>
+<section class="mais-conteudo">
+  <h2>Nossos Destaques</h2>
+  <p>Escolha o que combina com o seu ambiente.</p>
+
+  <div class="cards">
+    <div class="card">
+      <img src="img/produto1.png" alt="Produto 1">
+      <h3>Poltrona Design</h3>
+      <p>Conforto e elegância em um só produto.</p>
+      <button>Compre agora</button>
+    </div>
+
+    <div class="card">
+      <img src="img/produto2.png" alt="Produto 2">
+      <h3>Luminária Minimalista</h3>
+      <p>Ilumine com estilo moderno e sofisticado.</p>
+      <button>Compre agora</button>
+    </div>
+
+    <div class="card">
+      <img src="img/produto3.png" alt="Produto 3">
+      <h3>Vaso Decorativo</h3>
+      <p>O toque final para sua decoração.</p>
+      <button>Compre agora</button>
+    </div>
+  </div>
+</section>
