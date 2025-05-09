@@ -221,95 +221,83 @@ body {
 .icones .icone:hover {
   opacity: 0.7;
 }
-
-
-/* Animação de aparecer suavemente */
-@keyframes aparecer {
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
+.sessao-produtos {
+  background-color: #fdf7ec;
+  padding: 60px 20px;
+  color: #333;
+  font-family: Arial, sans-serif;
 }
 
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  .circulo {
-    width: 50vw;
-    height: 50vw;
-  }
-  
-  .jarro {
-    width: 20vw;
-  }
-}
-
-.mais-conteudo {
-  padding: 100px 60px;
-  background-color: #fff;
-  color: #000;
+.linha {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
   text-align: center;
 }
 
-.mais-conteudo h2 {
-  font-size: 3em;
-  margin-bottom: 10px;
-  letter-spacing: 5px;
-}
-
-.mais-conteudo p {
-  font-size: 1.2em;
-  margin-bottom: 60px;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.card {
-  background-color: #f5ebd9;
+.produto img {
+  width: 180px;
+  height: auto;
   border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  padding: 30px;
-  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 20px;
+.produto img:hover {
+  transform: scale(1.03);
 }
 
-.card h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.card p {
+.produto p {
+  margin-top: 10px;
   font-size: 1em;
-  margin-bottom: 20px;
+  font-weight: bold;
 }
 
-.card button {
-  padding: 10px 25px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
+.produto span {
+  color: #b5835a;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+.produto.grande {
+  flex-direction: column;
+}
+
+.produto.grande img {
+  width: 90%;
+  border-radius: 25px;
+  max-width: 800px;
+}
+
+.produto.grande h2 {
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.produto.grande h2 span {
+  color: #c99d66;
+}
+
+.categorias img {
+  width: 120px;
+  border-radius: 18px;
+  transition: transform 0.3s ease;
+}
+
+.categorias img:hover {
+  transform: scale(1.05);
+}
+
+.rodape {
+  text-align: center;
   font-size: 1em;
-  transition: background 0.3s ease;
+  color: #444;
 }
 
-.card button:hover {
-  background-color: #333;
-}
-
-.card:hover {
-  transform: translateY(-10px);
+.rodape strong {
+  color: #a66d3a;
+  font-size: 1.2em;
 }
