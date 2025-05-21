@@ -381,3 +381,126 @@ body {
   height: 100px;
   object-fit: contain;
 }
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fef9f2;
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+}
+
+.logo-esquerda {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.logo-esquerda img {
+  width: 50px;
+  height: auto;
+}
+
+.login-box {
+  background-color: #e6d1ac;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.login-box h1 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #443323;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: -85px auto 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.avatar img {
+  width: 32px;
+  height: 32px;
+}
+
+.form-login input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #d7be9a;
+  font-size: 1rem;
+  color: #443323;
+  transition: background 0.3s ease;
+}
+
+.form-login input:focus {
+  background-color: #ecd6b4;
+  outline: none;
+}
+
+.lembrar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #443323;
+  line-height: 1;
+}
+
+.lembrar input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #5a4430; /* cor opcional para checkbox estilizado */
+}
+
+.lembrar label {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+
+.form-login button {
+  width: 85%;
+  padding: 10px;
+  margin: 0 auto 10px auto;
+  display: block;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.form-login button[type="submit"] {
+  background-color: #d7be9a;
+  color: #443323;
+}
+
+.form-login button.criar-conta {
+  background-color: #d7be9a;
+  color: #443323;
+}
+
+.form-login button:hover {
+  filter: brightness(1.05);
+}

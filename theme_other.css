@@ -231,3 +231,245 @@ body {
   color: #a66d3a;
   font-size: 1.2em;
 }
+.politica {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #fdf7ef;
+  color: #443323;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2d3c2;
+}
+
+.politica h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: left;
+  border-bottom: 2px solid #d2bfa7;
+  padding-bottom: 10px;
+  color: #2f2f2f;
+}
+
+.politica h2 {
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #6a5845;
+  border-left: 4px solid #c5a77a;
+  padding-left: 10px;
+}
+
+.politica p {
+  margin-bottom: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 2px solid #f0e6d5;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #fefaf4;
+  border-radius: 6px;
+}
+
+.politica ul, .politica ol {
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.politica li {
+  margin-bottom: 10px;
+}
+
+.politica ul li::marker,
+.politica ol li::marker {
+  color: #b5835a;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #fdf7ef;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #6a5845;
+}
+
+.footer-top {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.slogan-light {
+  font-size: 1.4rem;
+}
+
+.slogan-bold {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #3d2e1f;
+  text-shadow: 1px 1px 1px #cfcfcf;
+}
+
+.footer-line {
+  border: none;
+  border-top: 1px solid #d2bfa7;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.footer-logo img {
+  object-fit: contain;
+}
+
+.footer-links {
+  display: flex;
+  font-size: 8rem;
+  gap: 60px;
+}
+
+.footer-links .col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #6a5845;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-payments {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.payments-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.payment-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.payment-icons img {
+  width: 32px;
+  height: 32px;
+}
+.footer-logo img {
+  width: 70px;
+  height: 100px;
+  object-fit: contain;
+}
+.nossa-historia {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fdf7ef;
+  color: #443323;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.nossa-historia h1 {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  color: #6a5845;
+}
+
+.nossa-historia p {
+  margin-bottom: 20px;
+}
+.contato {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fdf7ef;
+  color: #443323;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+.contato h1 {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  color: #6a5845;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  border: none;
+  background-color: #e6d6ba;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #443323;
+}
+
+.formulario textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.formulario button {
+  padding: 10px;
+  background-color: #5a4430;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #443323;
+}
+
+.info-contato {
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.info-item img {
+  width: 20px;
+  height: 20px;
+}
