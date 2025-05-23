@@ -473,3 +473,111 @@ body {
   width: 20px;
   height: 20px;
 }
+.produto-sel {
+  display: flex;
+  justify-content: flex-start;
+  margin: 5% 8%;
+  height: 408px;
+  gap: 75px;
+}
+
+.produto-img img{
+  width: 520px;
+  height: 420px;
+  object-fit:contain;
+  border-radius: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.062);
+}
+
+.produto-desc{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  gap: 10%;
+}
+
+.produto-desc h1{
+  font-size: 2em;
+}
+
+.produto-desc h2{
+  font-weight: lighter;
+}
+
+.produto-desc button{
+  height: 50px;
+  width: 70%;
+  font-size: 1em;
+  background-color: #D2B68A;
+  border-radius: 5px;
+  border: none;
+}
+
+.produto-desc button:hover{
+  background-color: #bca47b;
+  cursor: pointer;
+}
+
+.produto-carrinho{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+
+.produto-carrinho img{
+  height: 50%;
+}
+
+.produto-button{
+  display: flex;
+  width: 50%;
+  height: 50px;
+  background-color: #D2B68A;
+  color: black;
+  border-radius: 5px;
+  margin: 0%;
+}
+
+.produto-button button{
+  height: 100%;
+  width: 35%;
+  background-color: #D2B68A;
+  border: none;
+  font-size: 2em;
+}
+
+.produto-button button:hover{
+  background-color: #bca47b;
+  cursor: default;
+}
+
+.produto-button input{
+  height: 100%;
+  width: 30%;
+  font-size: 2em;
+  background-color: #D2B68A;
+  border: none;
+  text-align: center;
+  outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.sessao-produtos {
+  background-color: #fdf7ec;
+  padding: 60px 20px;
+  color: #333;
+  font-family: "Quicksand", sans-serif;
+}
